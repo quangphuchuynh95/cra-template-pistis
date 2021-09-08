@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.multiple-user-guard-modal {
+  z-index: 1201;
+}
+
+[contenteditable] {
+  -webkit-user-select: text;
+  user-select: text;
+}
