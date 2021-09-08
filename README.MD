@@ -2,10 +2,10 @@
 ## How to use
 With `yarn`:
 ```shell
-yarn create create-app [app name] --template pistis
+yarn create react-app [app name] --template pistis
 ```
 
 With `npm`:
 ```shell
-npm create-create-app [app name] --template pistis
+npm create-react-app [app name] --template pistis
 ```
