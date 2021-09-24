@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReduxThunk from 'redux-thunk';
 import { createBrowserHistory } from 'history';
-import { NoSsr } from '@material-ui/core';
+import { NoSsr } from '@mui/material';
 import { routerMiddleware } from 'connected-react-router';
 import { Provider as ReduxProvider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';

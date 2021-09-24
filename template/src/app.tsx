@@ -1,9 +1,10 @@
 import React, { FunctionComponent, useMemo } from 'react';
-import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
+import { ThemeProvider as MuiThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import { ThemeProvider } from 'styled-components';
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 import Routes from './routes';
 import { createTheme } from './theme';
+
 
 const App: FunctionComponent = () => {
   const theme = useMemo(
@@ -12,12 +13,14 @@ const App: FunctionComponent = () => {
   )
 
   return (
-    <MuiThemeProvider theme={theme}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Routes />
-      </ThemeProvider>
-    </MuiThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Routes />
+        </ThemeProvider>
+      </MuiThemeProvider>
+    </StyledEngineProvider>
   );
 }
 

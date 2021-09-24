@@ -6,6 +6,7 @@
     "plugin:jest/recommended"
   ],
   "plugins": [
+    "import",
     "react",
     "@typescript-eslint",
     "jest",

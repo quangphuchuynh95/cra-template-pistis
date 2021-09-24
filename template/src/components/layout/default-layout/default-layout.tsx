@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { AppBar } from '@material-ui/core';
+import { AppBar } from '@mui/material';
 
 interface DefaultLayoutProps {
 

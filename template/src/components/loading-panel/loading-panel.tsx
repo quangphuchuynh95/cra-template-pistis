@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { CircularProgress } from '@material-ui/core';
+import { CircularProgress } from '@mui/material';
 import { Wrapper } from './loading-panel.styled';
 
 export interface LoadingPanelProps {

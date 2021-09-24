@@ -1,7 +1,7 @@
-import { createTheme as createMuiTheme } from '@material-ui/core/styles';
+import { createTheme as createMuiTheme } from '@mui/material/styles';
 
 export const createTheme = (mode: 'dark' | 'light') => createMuiTheme({
   palette: {
-    type: mode,
+    mode,
   },
 });

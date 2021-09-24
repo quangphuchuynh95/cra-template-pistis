@@ -36,20 +36,20 @@ export const padding = (
   position: 'l' | 'r' | 'b' | 't' | 'y' | 'x' | 'a' = 'a',
   spacing = 1,
 ) => css`
-  ${({ theme }) => ['l', 'x', 'a'].includes(position) && `padding-left: ${theme.spacing(spacing)}px;`}
-  ${({ theme }) => ['r', 'x', 'a'].includes(position) && `padding-right: ${theme.spacing(spacing)}px;`}
-  ${({ theme }) => ['t', 'y', 'a'].includes(position) && `padding-top: ${theme.spacing(spacing)}px;`}
-  ${({ theme }) => ['b', 'y', 'a'].includes(position) && `padding-bottom: ${theme.spacing(spacing)}px;`}
+  ${({ theme }) => ['l', 'x', 'a'].includes(position) && `padding-left: ${theme.spacing(spacing)};`}
+  ${({ theme }) => ['r', 'x', 'a'].includes(position) && `padding-right: ${theme.spacing(spacing)};`}
+  ${({ theme }) => ['t', 'y', 'a'].includes(position) && `padding-top: ${theme.spacing(spacing)};`}
+  ${({ theme }) => ['b', 'y', 'a'].includes(position) && `padding-bottom: ${theme.spacing(spacing)};`}
 `;
 
 export const margin = (
   position: 'l' | 'r' | 'b' | 't' | 'y' | 'x' | 'a' = 'a',
   spacing = 1,
 ) => css`
-  ${({ theme }) => ['l', 'x', 'a'].includes(position) && `margin-left: ${theme.spacing(spacing)}px;`}
-  ${({ theme }) => ['r', 'x', 'a'].includes(position) && `margin-right: ${theme.spacing(spacing)}px;`}
-  ${({ theme }) => ['t', 'y', 'a'].includes(position) && `margin-top: ${theme.spacing(spacing)}px;`}
-  ${({ theme }) => ['b', 'y', 'a'].includes(position) && `margin-bottom: ${theme.spacing(spacing)}px;`}
+  ${({ theme }) => ['l', 'x', 'a'].includes(position) && `margin-left: ${theme.spacing(spacing)};`}
+  ${({ theme }) => ['r', 'x', 'a'].includes(position) && `margin-right: ${theme.spacing(spacing)};`}
+  ${({ theme }) => ['t', 'y', 'a'].includes(position) && `margin-top: ${theme.spacing(spacing)};`}
+  ${({ theme }) => ['b', 'y', 'a'].includes(position) && `margin-bottom: ${theme.spacing(spacing)};`}
 `;
 
 export const card = (
